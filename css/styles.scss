@@ -1,0 +1,348 @@
+// Custom Colors Variables
+$primaryColor: #ff5e13;
+$successColor: #4bd3e3;
+$infoColor: #38a4ff;
+$warningColor: #f4e800;
+$dangerColor: #f54a40;
+$linkColor: #1ec6b6;
+$textColor: #040e27;
+$secondaryTextColor: #7a838b;
+
+// Basic Styles
+body {
+  color: $textColor;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+  background-color: #f6fafd;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  color: $textColor;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+// Navbar section
+.navbar {
+  padding: 30px 10px;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 36px;
+}
+
+.nav-item {
+  padding: 10px 20px;
+}
+
+.nav-link:hover {
+  color: $linkColor !important;
+}
+
+.logo {
+  width: 50px;
+  margin: 0 10px 10px 0;
+}
+
+.search-btn {
+  background-color: $dangerColor;
+}
+
+.carousel-item {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1ec6b6;
+  opacity: 0.3;
+}
+.carousel-item-1 {
+  background-image: url(/images/sundarban.jpg);
+  background-size: cover;
+}
+.carousel-item-2 {
+  background-image: url(/images/coxbazar.jpg);
+  background-size: cover;
+}
+.carousel-item-3 {
+  background-image: url(/images/nepal.jpg);
+  background-size: cover;
+}
+
+.carousel-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-body h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-family: 'Nothing You Could Do', cursive;
+  text-transform: uppercase;
+}
+
+.carousel-body p {
+  font-size: 1.3rem;
+  margin: 30px 0 40px;
+}
+
+.carousel-body button {
+  background-color: $linkColor;
+  color: white;
+  padding: 15px 40px;
+
+  &:hover {
+    background-color: $dangerColor;
+    color: white;
+  }
+}
+
+// Search Section
+
+#search {
+  padding: 5% 10%;
+  background-color: $textColor;
+  color: white;
+  text-align: center;
+
+  .form-inline {
+    .form-control {
+      background: transparent;
+      border: 1px solid $secondaryTextColor;
+    }
+    button {
+      color: white;
+      background-color: $linkColor;
+      &:hover {
+        background-color: $dangerColor;
+      }
+    }
+  }
+}
+
+// Popular Destination Section
+
+#popular {
+  text-align: center;
+  padding: 7% 10%;
+}
+
+.poplular-button {
+  background-color: $dangerColor;
+  color: white;
+  padding: 10px 30px;
+  margin-top: 3rem;
+
+  &:hover {
+    background-color: $linkColor;
+    color: white;
+  }
+}
+
+.subtitle {
+  width: 60%;
+  margin: 20px auto 40px;
+  color: $secondaryTextColor;
+}
+
+.card {
+  text-align: left;
+  //   border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+
+  &:hover {
+    .price-tag {
+      background-color: $dangerColor;
+    }
+  }
+}
+
+.card-header {
+  padding: 0;
+  position: relative;
+  height: auto;
+}
+
+.card-header-image {
+  background-size: cover;
+  width: 100%;
+}
+
+.price-tag {
+  position: absolute;
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: $linkColor;
+  color: white;
+  border-radius: 20px;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-body a {
+  text-decoration: none;
+  &:hover {
+    color: $dangerColor;
+  }
+}
+
+.card-body p {
+  color: $secondaryTextColor;
+
+  & span {
+    float: right;
+  }
+}
+
+// Service Section
+
+#services {
+  background-color: $dangerColor;
+  text-align: center;
+  padding: 7% 10%;
+}
+
+.service {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+
+  img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    color: $textColor;
+  }
+
+  &:hover {
+    background-color: $successColor;
+    box-shadow: 0 10px 20px #040e27;
+    text-decoration: none;
+
+    h3 {
+      color: #fff;
+    }
+  }
+}
+
+#countries {
+  padding: 7% 10%;
+  text-align: center;
+}
+
+.country {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  height: 250px;
+  margin-bottom: 2rem;
+
+  &:hover {
+    box-shadow: 0 10px 30px $textColor;
+    .country-name {
+      color: $dangerColor;
+      & span {
+        color: #fff;
+        background-color: $dangerColor;
+      }
+    }
+  }
+
+  &-image {
+    height: 100%;
+  }
+
+  &-name {
+    position: absolute;
+    bottom: 10px;
+    margin-left: 20px;
+
+    span {
+      background-color: $linkColor;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+  }
+}
+
+// Footer Section
+#footer {
+  background-color: $textColor;
+  color: white;
+  padding: 2% 10%;
+
+  .footer-brand {
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .contact-info {
+    font-size: 0.8rem;
+    color: $secondaryTextColor;
+    line-height: 1.5rem;
+  }
+
+  .social i {
+    margin-right: 20px;
+  }
+
+  a {
+    color: white;
+  }
+
+  ul {
+    padding: 0;
+    font-size: 0.8rem;
+    li {
+      list-style-type: none;
+      padding: 10px 0;
+      a {
+        color: $secondaryTextColor;
+        &:hover {
+          color: $dangerColor;
+        }
+      }
+    }
+  }
+
+  .footer-destination {
+    li {
+      float: left;
+      width: 50%;
+    }
+  }
+}
+
+// ********************************** packages.html ********************************** //
+// filter section
+#filter {
+  padding: 7% 10%;
+}

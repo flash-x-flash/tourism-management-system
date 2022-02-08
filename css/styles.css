@@ -1,0 +1,335 @@
+body {
+  color: #040e27;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+  background-color: #f6fafd;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  color: #040e27;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 30px 10px;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 36px;
+}
+
+.nav-item {
+  padding: 10px 20px;
+}
+
+.nav-link:hover {
+  color: #1ec6b6 !important;
+}
+
+.logo {
+  width: 50px;
+  margin: 0 10px 10px 0;
+}
+
+.search-btn {
+  background-color: #f54a40;
+}
+
+.carousel-item {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1ec6b6;
+  opacity: 0.3;
+}
+
+.carousel-item-1 {
+  background-image: url(/images/sundarban.jpg);
+  background-size: cover;
+}
+
+.carousel-item-2 {
+  background-image: url(/images/coxbazar.jpg);
+  background-size: cover;
+}
+
+.carousel-item-3 {
+  background-image: url(/images/nepal.jpg);
+  background-size: cover;
+}
+
+.carousel-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.carousel-body h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-family: 'Nothing You Could Do', cursive;
+  text-transform: uppercase;
+}
+
+.carousel-body p {
+  font-size: 1.3rem;
+  margin: 30px 0 40px;
+}
+
+.carousel-body button {
+  background-color: #1ec6b6;
+  color: white;
+  padding: 15px 40px;
+}
+
+.carousel-body button:hover {
+  background-color: #f54a40;
+  color: white;
+}
+
+#search {
+  padding: 5% 10%;
+  background-color: #040e27;
+  color: white;
+  text-align: center;
+}
+
+#search .form-inline .form-control {
+  background: transparent;
+  border: 1px solid #7a838b;
+}
+
+#search .form-inline button {
+  color: white;
+  background-color: #1ec6b6;
+}
+
+#search .form-inline button:hover {
+  background-color: #f54a40;
+}
+
+#popular {
+  text-align: center;
+  padding: 7% 10%;
+}
+
+.poplular-button {
+  background-color: #f54a40;
+  color: white;
+  padding: 10px 30px;
+  margin-top: 3rem;
+}
+
+.poplular-button:hover {
+  background-color: #1ec6b6;
+  color: white;
+}
+
+.subtitle {
+  width: 60%;
+  margin: 20px auto 40px;
+  color: #7a838b;
+}
+
+.card {
+  text-align: left;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.card:hover .price-tag {
+  background-color: #f54a40;
+}
+
+.card-header {
+  padding: 0;
+  position: relative;
+  height: auto;
+}
+
+.card-header-image {
+  background-size: cover;
+  width: 100%;
+}
+
+.price-tag {
+  position: absolute;
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: #1ec6b6;
+  color: white;
+  border-radius: 20px;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-body a {
+  text-decoration: none;
+}
+
+.card-body a:hover {
+  color: #f54a40;
+}
+
+.card-body p {
+  color: #7a838b;
+}
+
+.card-body p span {
+  float: right;
+}
+
+#services {
+  background-color: #f54a40;
+  text-align: center;
+  padding: 7% 10%;
+}
+
+.service {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.service img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  color: #040e27;
+}
+
+.service:hover {
+  background-color: #4bd3e3;
+  -webkit-box-shadow: 0 10px 20px #040e27;
+          box-shadow: 0 10px 20px #040e27;
+  text-decoration: none;
+}
+
+.service:hover h3 {
+  color: #fff;
+}
+
+#countries {
+  padding: 7% 10%;
+  text-align: center;
+}
+
+.country {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  height: 250px;
+  margin-bottom: 2rem;
+}
+
+.country:hover {
+  -webkit-box-shadow: 0 10px 30px #040e27;
+          box-shadow: 0 10px 30px #040e27;
+}
+
+.country:hover .country-name {
+  color: #f54a40;
+}
+
+.country:hover .country-name span {
+  color: #fff;
+  background-color: #f54a40;
+}
+
+.country-image {
+  height: 100%;
+}
+
+.country-name {
+  position: absolute;
+  bottom: 10px;
+  margin-left: 20px;
+}
+
+.country-name span {
+  background-color: #1ec6b6;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#footer {
+  background-color: #040e27;
+  color: white;
+  padding: 2% 10%;
+}
+
+#footer .footer-brand {
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#footer .contact-info {
+  font-size: 0.8rem;
+  color: #7a838b;
+  line-height: 1.5rem;
+}
+
+#footer .social i {
+  margin-right: 20px;
+}
+
+#footer a {
+  color: white;
+}
+
+#footer ul {
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+#footer ul li {
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+#footer ul li a {
+  color: #7a838b;
+}
+
+#footer ul li a:hover {
+  color: #f54a40;
+}
+
+#footer .footer-destination li {
+  float: left;
+  width: 50%;
+}
+
+#filter {
+  padding: 7% 10%;
+}
+/*# sourceMappingURL=styles.css.map */
